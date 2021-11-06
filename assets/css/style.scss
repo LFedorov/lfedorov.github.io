@@ -5,6 +5,13 @@
 
 .page-header-navigation {
 
-    a {
-    }
+  a {
+    font-size: 1.5rem;
+    color: #fff;
+    opacity: 0.7;
+    margin: 0 1rem;
+  }
+  a:hover {
+    opacity: 1;
+  }
 }

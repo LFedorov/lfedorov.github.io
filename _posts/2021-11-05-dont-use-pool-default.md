@@ -4,8 +4,6 @@ title: Don't use D3DPOOL_DEFAULT for buffers in D3D9
 comments: true
 ---
 
-# Don't use D3DPOOL_DEFAULT for buffers in D3D9
-
 ## Long story short
 Use **D3DPOOL_MANAGED** for buffers in **D3D9 API** instead of **D3DPOOL_DEFAULT**, because it can cause a critical performance hit on all (Nvidia, AMD) current drivers (2021 year). Also do not use **D3D9Ex** - because you cannot use **D3DPOOL_MANAGED** in it.
 

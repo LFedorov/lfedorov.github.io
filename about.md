@@ -7,3 +7,5 @@
 - May 2011 – Jun 2018 **Render Programmer** at _Saber Interactive_
 - Jun 2009 – Aug 2010 **Game Programmer** at _Lesta (Wargaming Saint-Petersburg)_
 - May 2006 – Nov 2009 **Software Engineer** at _VZlab_
+
+Linkedin: https://www.linkedin.com/in/leonid-fedorov/

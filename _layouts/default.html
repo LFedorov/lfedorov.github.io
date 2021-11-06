@@ -21,9 +21,11 @@
 
       {{ site.data.navigation }}
 
+      <div class="page-header-navigation">
       {% for item in site.data.navigation %}
-      <li class="page-header-navigation"><a href="{{ item.link }}">{{ item.name }}</a></li>
+        <a href="{{ item.link }}">{{ item.name }}</a>
       {% endfor %}
+      </div>
 
       {% if site.github.is_project_page %}
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>

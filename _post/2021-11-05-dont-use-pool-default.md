@@ -1,3 +1,9 @@
+---
+layout: post
+title: Don't use D3DPOOL_DEFAULT for buffers in D3D9
+comments: true
+---
+
 # Don't use D3DPOOL_DEFAULT for buffers in D3D9
 
 ## Long story short
@@ -24,14 +30,14 @@ After some tests, I realized that if you replace POOL where vertex/index buffers
 
 If we load the application from under DXVK with the HUD enabled, we will see the following picture:
 
-![Default and managed pool comparison](assets/post/2021-11-05-pool-default/default_vs_managed_dxvk_hud.png)
+![Default and managed pool comparison](/assets/post/2021-11-05-pool-default/default_vs_managed_dxvk_hud.png)
 
 Left (1) - buffers use D3DPOOL_DEFAULT, Right (2) - D3DPOOL_MANAGED.
 Notice how the data is distributed across the video memory.
 
 With the help of [Vulkan Caps Viewer](https://vulkan.gpuinfo.org/download.php), we can see what memory is available to us:
 
-![Memory heaps](assets/post/2021-11-05-pool-default/memory_heaps.png)
+![Memory heaps](/assets/post/2021-11-05-pool-default/memory_heaps.png)
 
 In my case the Nvidia driver gives us access to 3 Heap's:
 - **Video Memory Heap 0**: 6GB (DEVICE_LOCAL_BIT);
